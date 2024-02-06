@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   In this module, we are going to start the process of making our own
 #   calculator. It is going to be a very simple calculator, because the user
@@ -27,9 +27,33 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+import math
+def add(number1, number2):
+    return number1 + number2
+    
+
+def subtract(number1, number2):
+    return number1 - number2
+
+def multiply(number1, number2):
+    return number1 * number2
+
+def divide(number1, number2):
+    return number1 / number2
+
+def pow(number1, number2):
+    return math.pow(number1, number2)
+
+
+
+
+
+
+
+
 
 ###############################################################################
-# TODO: 2. (8 pts)
+# Done: 2. (8 pts)
 #
 #   Now we need a function that will act as the control unit. It will ask the
 #   user for inputs and call the math functions.
@@ -60,8 +84,21 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def main():
+    name = input("first name:")
+    print(f"hello {name} nice to meet you!")
+    number1 = int(input("enter first number:")) 
+    number2 = int(input("enter second number:"))
+    print ("Add:", add(number1, number2))
+    print ("Subtract:", subtract(number1, number2))
+    print ("Multiply:", multiply(number1, number2))
+    print ("Divide:", divide(number1, number2))
+    print ("Power:", pow(number1, number2))
+
+main()
+
 ###############################################################################
-# TODO: 3. EXTRA CREDIT (4 pts)
+# Done: 3. EXTRA CREDIT (4 pts)
 #
 #   For this _TODO_, do NOT write your code beneath it. You will be modifying
 #   your code above. This is extra credit, so you don't need to complete this
